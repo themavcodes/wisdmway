@@ -1,18 +1,18 @@
-// src/pages/AuthPage.jsx
-import AuthForm from '../components/AuthForm';
+import AuthForm from "../components/AuthForm";
+import Footer from "../components/Footer";
 
-export function Auth () {
+export function Auth() {
   return (
-    <div className="min-h-screen  flex flex-col  justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-500">
-      <div className="flex flex-col items-center w-full px-4 max-w-lg"></div>
+    <div className="min-h-screen animate-gradient-x bg-dark-red-blue bg-200% flex flex-col justify-center items-center">
       {/* Welcome Message */}
-      <h1 className="text-4xl font-bold text-white mb-8 ml-10 mt-20">
+      <h1 className="text-5xl font-extrabold text-white mb-10 tracking-wide">
         Welcome to Wisdmway!
       </h1>
-      <div className="max-w-md flex m-auto w-full justify-center items-center">
+      <div className="max-w-md flex justify-center items-center w-full opacity-65">
         <AuthForm />
       </div>
+      {/* Footer */}
+      <Footer />
     </div>
   );
-};
-
+}
