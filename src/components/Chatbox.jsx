@@ -14,7 +14,7 @@ const Chatbox = () => {
   };
 
   return (
-    <div className="w-full max-w-xl bg-gray-100 shadow-md rounded-lg p-4 mt-8">
+    <div className="w-full max-w-xl bg-gray-100 shadow-md rounded-lg p-4 mt-8 opacity-70">
       <div className="h-64 overflow-y-scroll border-b-2 mb-4">
         {messages.map((msg, idx) => (
           <div key={idx} className="mb-2">
